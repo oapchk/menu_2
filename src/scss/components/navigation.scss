@@ -1,6 +1,26 @@
+@import "../utils/functions";
+@import "../utils/mixins";
+
 .navigation {
+  align-self: flex-end;
+  @include flex(flex-end);
   &__item {
-    &--current {
+    font-family: "Roboto Light", sans-serif;
+    padding: px-to-rem(20px) px-to-rem(10px);
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkgray;
+    transition: all 200ms ease-in-out;
+    &:first-child {
+      border-top-left-radius: px-to-rem(4px);
+    }
+    &:last-child {
+      border-top-right-radius: px-to-rem(4px);
+    }
+
+    @include link(white, darkgray) {
+      border-bottom: px-to-rem(2px) solid rosybrown;
     }
   }
 
