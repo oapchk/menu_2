@@ -318,8 +318,21 @@ body {
 .header__inner {
   width: 100%;
   max-width: 60rem;
-  max-width-margin-inline: auto;
-  max-width-padding-inline: 0.9375rem;
+  margin-inline: auto;
+  padding-inline: 0.9375rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-image: url("../img//logo.svg");
+  background-repeat: no-repeat;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  overflow: hidden;
+  text-indent: -999px;
 }
 
 /*# sourceMappingURL=main.css.map */
