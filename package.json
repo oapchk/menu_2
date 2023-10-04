@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpilation": "sass /src/sass/main.scss /src/css/main.css --watch"
+    "transpilation": "sass ./src/scss/main.scss ./src/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
