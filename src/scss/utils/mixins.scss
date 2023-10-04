@@ -25,3 +25,12 @@
     @content;
   }
 }
+
+@mixin font-face($font-name, $font-file) {
+  @font-face {
+    font-family: $font-file;
+    src: url("#{$font-path}/#{$font-file}.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
